@@ -1,35 +1,31 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
+import NavigationBar from './components/NavigationBar';
+import Profile from './components/Profile';
+import ExploreCommunities from './components/ExploreCommunities';
+import RevisitMemories from './components/RevisitMemories';
+import MyEvents from './components/MyEvents';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="gradient-bg flex min-h-screen items-center justify-center from-blue-500 to-purple-600 p-8">
-      <div className="max-w-xl transform rounded-lg bg-white p-8 shadow-lg transition duration-500 hover:scale-105">
-        <h1 className="mb-4 animate-bounce text-center text-4xl font-bold text-gray-800">
-          Hello World
-        </h1>
-        <p className="mb-6 rounded-md bg-amber-100 p-6 text-gray-600">
-          Welcome to our React application enhanced with Tailwind CSS. This
-          application is built using the modern web development stack: Vite,
-          React, Tailwind CSS, and Prettier.
-        </p>
-        <div className="prose mt-6">
-          <p>
-            Tailwind CSS is a utility-first CSS framework that provides
-            low-level utility classes to build custom designs without any
-            annoying opinionated styles you have to fight to override. Paired
-            with React, it makes building beautiful and interactive user
-            interfaces a breeze.
-          </p>
-          <p>
-            Explore the power of combining these technologies to create
-            stunning, responsive, and animated web applications. Enjoy the
-            seamless development experience with Prettier ensuring your code
-            stays clean and consistent.
-          </p>
-        </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <NavigationBar />
+        <main className="main-content">
+          <Switch>
+            <Route path="/" exact component={Profile} />
+            <Route path="/explore" component={ExploreCommunities} />
+            <Route path="/memories" component={RevisitMemories} />
+            <Route path="/events" component={MyEvents} />
+          </Switch>
+        </main>
       </div>
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
+

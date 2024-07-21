@@ -1,0 +1,19 @@
+.my-events {
+  padding: 20px;
+}
+
+.upcoming-events h3 {
+  margin: 10px 0;
+}
+
+.create-event-button {
+  display: block;
+  margin: 20px 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

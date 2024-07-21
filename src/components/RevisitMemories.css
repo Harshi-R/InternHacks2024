@@ -1,0 +1,22 @@
+.revisit-memories {
+  padding: 20px;
+}
+
+.memory-carousel {
+  margin-bottom: 20px;
+  /* Add carousel styles */
+}
+
+.date-filter {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.share-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

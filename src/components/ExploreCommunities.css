@@ -1,0 +1,36 @@
+.explore-communities {
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.community-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.community-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.community-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.community-card button {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
